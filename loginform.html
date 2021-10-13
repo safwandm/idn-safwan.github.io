@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        body{
+            background: #fff;
+        }
+        .container{
+            width: 90%;
+            height: 100vh;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to left,#c93131, #459761, #6666ff);
+            box-shadow: 0px 0px 20px 10px gray;
+
+        }
+        .card{
+            width: 50%;
+            height: 55%;
+            background: #FFFF;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .judul{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .form-data{
+            margin: 25px 20px;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+        }
+        label, input{
+            width: 100%;
+            border-top: transparent;
+            border-left: transparent;
+            border-right: transparent;
+            outline: transparent;
+        }
+        a{
+            width: 0 auto;
+            margin-bottom: 20px;
+            margin-top: 5px;
+            text-align: right;
+            font-size: 13px;
+        }
+        .btn-submit{
+            border: transparent;
+            padding: 15px;
+            background: linear-gradient(to left,#6666ff, #459761, #c93131);
+            border-radius: 20px;
+            color: azure;
+        }
+        .btn-submit:hover{
+            cursor: pointer;
+            background: linear-gradient(to left,#c93131, #459761, #6666ff);
+            transition: 1s;
+        }
+        .login-with{
+            margin-bottom: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .another-sign-up{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+        }
+        .another-signup, .or-signup{
+            margin: 5px;
+            color: gray;
+            font-size: 13px;
+        }
+        .fb, .twitter, .google{
+            width: 30px;
+            height: 30px;
+            clip-path: circle();
+        }
+        .username{
+            background-size: 16px;
+            margin-left: 5px;
+            padding-bottom: 5px;
+            padding-left: 30px;
+        }
+        .password{
+            background-size: 16px;
+            margin-left: 5px;
+            padding-bottom: 5px;
+            padding-left: 30px;
+        }
+        .username1, .password2{
+    
+            margin-bottom: 5px;
+            margin-top: 10px;
+        }
+        .image-assets{
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            
+        }
+        .username-login{
+            display: flex;
+            flex-direction: row;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="judul">
+                <h1>Login</h1>
+            </div>
+            <form class="form-data" action="#">
+
+                <label class="username1">Username</label>
+                <input id="username" type="text" class="username" placeholder="username">
+
+                <label class="password2">Password</label>
+                <input id="password" class="password" type="password" placeholder="password">
+
+                <a href="#">Forgot password?</a>
+                <input type="submit" class="btn-submit" placeholder="Masuk">
+
+            </form>
+            <div class="another-sign-up">
+                <h6 class="another-signup">SIGN UP</h6>
+            </div>
+            <div class="login-with">
+                <h7 class="sign-up">Atau signup menggunakan</h7>
+                <div class="image-assets">
+                    <img src="https://img.icons8.com/color/48/000000/facebook-new.png"/> 
+                    <img src="https://img.icons8.com/color/48/000000/twitter.png"/>
+                    <img src="https://img.icons8.com/color/48/000000/google-logo.png"/>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
